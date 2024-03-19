@@ -1,0 +1,85 @@
+/* Style the container for the social media icons */
+.social{
+        
+  border: 1px solid #7276a7;
+  border-radius: 10px;
+  width: 700px;
+  height: 120px;
+  display: flex; /* Use flexbox to align the icons */
+  justify-content: center; /* Center the icons horizontally */
+  align-items: center; /* Center the icons vertically */
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  backdrop-filter: blur(5px);
+  }
+
+  
+  /* Style the social media icons */
+.social a {
+    background: rgb(33, 33, 33);
+    color: #7276a7; /* Set the default color of the icons */
+    text-decoration: none; /* Remove underline from the icons */
+    font-size: 24px; /* Set the size of the icons */
+    width: 50px; /* Set the width of the icons */
+    height: 50px; /* Set the height of the icons */
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    margin-right: 10px; /* Add space between the icons */
+    border: 2px solid  #7276a7; /* Add a border around each icon */
+    border-radius: 50%;
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for color and transform */
+    background: transparent;
+    backdrop-filter: blur(10px);
+  }
+  
+  /* Hover effect for social media icons */
+.social a:hover {
+    
+    background: linear-gradient(
+        to right, rgb(8, 180, 143),#2fa3d9 35%, #e83574 );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 3s linear infinite;
+    color: #ec1897; /* Change the color of the icon on hover */
+    transform: translateY(-5px); /* Move the icon up slightly on hover */
+  }
+  
+@keyframes gradient{
+    0%{background-position: 0% 75%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0% 70%;}
+  }
+
+body{
+    background: #1f1725;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+    background-image: url('jaybg.jpg');    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: hard-light;
+   }
+
+.BorderLogo{
+  
+    
+    height: 200px;
+    width: 500px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   }
+
+img{
+
+  border-radius: 10%;
+  width: 100%;
+}
