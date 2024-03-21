@@ -31,7 +31,7 @@
     margin-right: 10px; /* Add space between the icons */
     border: 2px solid  #7276a7; /* Add a border around each icon */
     border-radius: 50%;
-    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for color and transform */
+    transition: color 0.3s ease, transform 0.5s ease, margin-right 0.5s ease, margin-lef 0.5s ease; /* Smooth transition for color and transform */
     background: transparent;
     backdrop-filter: blur(10px);
   }
@@ -46,9 +46,17 @@
     -webkit-text-fill-color: transparent;
     animation: gradient 3s linear infinite;
     color: #ec1897; /* Change the color of the icon on hover */
-    transform: translateY(-5px); /* Move the icon up slightly on hover */
+    transform: translateY(-20px) scale(1.5); /* Move the icon up slightly on hover */    
+    margin-right: 20px;
+    margin-left: 10px;
+
   }
-  
+
+.social a:not(:hover){
+
+  margin-right: 10px;
+}
+
 @keyframes gradient{
     0%{background-position: 0% 75%;}
     50%{background-position: 100% 50%;}
@@ -73,13 +81,12 @@ body{
     height: 200px;
     width: 500px;
     position: absolute;
-    top: 15%;
+    top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
    }
 
 img{
 
-  border-radius: 10%;
-  width: 100%;
+  width: 500px;
 }
